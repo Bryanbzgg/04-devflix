@@ -1,5 +1,5 @@
 import "./App.css";
-import MovieCard from "./components/MovieCard/MovieCard";
+import MovieCard from "./components/Moviecard/MovieCard";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import logo from "./assets/devflix.png";
