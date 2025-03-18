@@ -1,5 +1,4 @@
 import "./App.css";
-import MovieCard from "./components/Moviecard/MovieCard";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import logo from "./assets/devflix.png";
@@ -52,16 +51,7 @@ const App = () => {
         </div>
       </div>
       {/* mapeando o array de "movies" ou seja buscando os dados guardados na API ou array */}
-      {movies?.length > 0 ? (
-        <div className="container">
-          {movies.map((movie, index) => (
-            <MovieCard key={index} apiUrl={apiUrl} {...movie} />
-            // ...movie traz todos os dados guardados no DB ou array
-          ))}
-        </div>
-      ) : (
-        <h2 className="empty">Filme não encontrado</h2>
-      )}
+     
       <Footer
         DEVname="Bryan Martins Fusco"
         DEVLInk="https://github.com/Bryanbzgg"
